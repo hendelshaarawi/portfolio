@@ -1,0 +1,539 @@
+
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+* {
+	font-family: 'Nunito', 'sans-serif';
+}
+			
+
+header {
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	top: 0 ;
+	background-color: rgba(255,255,255,0.1);
+	z-index: 20;
+	transition: background-color 0.5s linear;
+    -moz-transition: background-color 0.5s linear;
+    -o-transition: background-color 0.5s linear;
+    -webkit-transition: background-color 0.5s linear;
+}
+
+.animated {
+		background-color: rgba(190,222,200,0.9);
+
+
+}
+
+.hideme
+{
+    opacity:0;}
+
+.current {
+	color: black;
+	border-bottom: solid black 1px;
+}   
+
+
+
+
+/*ALGEMEEN*/
+
+p {
+	font-weight: 100;
+	color: #545454;
+	font-size: 100%;
+}		
+
+
+h2 {
+	font-size: 180%;
+	font-weight: 300;
+	text-align: center;
+}
+
+h3 {
+	font-size: 140%;
+	font-weight: 300;
+	text-align: center;
+}
+
+ h4 {
+ 	color: black;
+ 	text-transform: uppercase;
+ 	font-size: 100%;
+ 	margin: 0;
+ 	font-weight: 500;
+ }
+
+hr {
+	margin: 0 auto 3% auto;
+    border: 0;
+    border-top: 1px solid black;
+    width: 90px;
+}
+
+.intro-text {
+	width: 60%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.intro {
+	margin-top: 3%;
+}
+
+
+#test {
+	height: 800px;
+}
+
+.cta-text span {
+	font-weight: 700;
+	font-style: italic;
+}
+
+div.cta-text p {
+	clear: both;
+}
+
+
+
+
+/*NAVIGATION*/
+
+nav ul {
+	top: 10px;
+	right: 50px;
+	z-index: 21;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	position: fixed;
+}
+
+nav li {
+	display: inline-block;
+	font-size: 18px;
+	letter-spacing: .075em;
+	position: relative;
+	padding: 0;
+	margin: 0;
+}
+
+nav ul li a {
+	color: black;
+	text-decoration: none;
+	margin: 3px 13px;
+	font-weight: 300;
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-size: 80%;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	-moz-transition: .5s;
+	-webkit-transition: .5s;
+	transition: .5s;	
+} 
+
+nav ul li a:hover {
+	text-decoration: none;
+	color: black;
+}
+
+nav ul li a::after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 1px;
+	background: pink;
+	transition: width .5s;
+}
+
+nav ul li a:hover::after {
+	width: 100%;
+}
+
+nav ul li a:current::after {
+	content: '';
+	display: none;
+}
+
+nav  ul li > ul {
+	display: none;
+}
+
+
+nav ul li:hover > ul {
+	display: block;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	top: 24px;
+	margin: 0;
+	padding: 0
+}
+
+nav ul li:hover > ul li{
+	width: 100%;
+}
+
+
+/*---FOOTER---*/
+
+.footer {
+	float: left;
+	background-color: #fcddd4;
+	width: 100%;
+	padding: 2% 0 0 0;
+	margin-top: 15%;
+}
+
+
+.copyright {
+	width: 100%;
+	float: left;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+.inner-social {
+	width: 100%;
+	float: left;
+	text-align: center;
+
+
+}
+.copyright p {
+		font-size: 80%;
+}	
+
+.uk-icon {
+	color: #939393;
+	margin: 2% 1% 4% 0;
+
+}
+
+.uk-icon:hover {
+	color: #ccc;
+	transition:  0.2s;
+    -moz-transition:  0.2s;
+    -o-transition:  0.2s;
+    -webkit-transition: 0.2s;
+
+}
+.uk-totop {
+	color: #939393;
+	float: right;
+	margin: 1% 3%;
+	font-size: 40px;
+	padding: 0 3%;
+}
+
+.uk-totop:hover {
+	color: black;
+}
+
+/*---END FOOTER*---*/
+
+
+
+
+
+
+#projects {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas: "case1"
+						"case2"
+						"case3"
+						
+}
+
+
+section#dutchbliss {
+	grid-area: case1;
+}
+
+section#imperium {
+	grid-area: case2;
+}
+
+section#robotica {
+	grid-area: case3;
+}
+
+section.one-third {
+	margin: 20% 0 20% 0;
+}
+
+section.projects figure {
+	width: 95%;
+	margin: 6% auto;
+
+}
+
+section.projects section.cta {
+	width: 100%;
+	text-align: right;
+	margin-right: 5%;
+	letter-spacing: .5px;
+    font-size: 120%;
+}
+
+section.cta div.cta-text{
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+}
+
+section.cta div.button-inner{
+	width: 80%;
+	margin: 0 auto;
+}
+
+#button {
+    width: 100%;
+    border: 1.4px solid #939393;
+    margin: 0 auto;
+
+}
+
+
+
+@media screen and (min-width: 600px){
+
+section.one-third {
+	margin: 15% 0 15% 0;
+}
+
+section.projects figure {
+	width: 75%;
+	margin: 6% auto;
+}
+
+section.one-third {
+	margin: 3% 0;
+}
+
+section.contact section.form p {
+	font-size: 100%;
+}
+
+
+h3 {
+	font-size: 180%;
+}
+
+.element a  {
+	color: #fcddd4;
+	margin: 1.6% 0;
+	}
+
+section.inner-wrapper-3 h3 {
+	margin-bottom: 0;
+	}
+
+p {
+	font-weight: 100;
+	color: #545454;
+	font-size: 130%;
+}	
+
+h2 {
+	font-size: 210%;
+	font-weight: 300;
+	text-align: center;
+	padding-top: 5%
+}
+
+h3 {
+	font-size: 180%;
+	font-weight: 300;
+	text-align: center;
+}
+
+ h4 {
+ 	color: grey;
+ }
+
+
+
+/* PROJECTS*/
+section.projects figure {
+	width: 75%;
+	margin: 6% auto;
+}
+
+section.one-third {
+	margin: 3% 0;
+}
+
+section.contact section.form p {
+	font-size: 100%;
+}
+
+figcaption {
+	font-size: 120%;
+}
+
+.footer {
+	margin-top: 8%;
+}
+
+
+}
+
+
+@media screen and (min-width: 1100px){
+
+/*----DESKTOP SMALL----*/
+
+
+/* DRIE SECTIONS */
+
+.titles {
+	margin-top: 5%;
+}
+
+.projects {
+	width: 100%;
+	float: left;
+}
+
+
+
+.project-inner {
+	width: 100%;
+	float: left;
+
+}
+
+.project {
+	margin-bottom: 5%;
+}
+
+
+			
+.inner-wrapper-3 {
+	float: left;
+	width: 100%;
+	background-color: #fff;
+}
+
+.one-third {
+	width: calc(100%/3);
+	float: left;
+	text-align: center;
+	padding-top: 45px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.one-third p {
+	padding: 0 8%;
+}
+
+
+.one-third a {
+	text-decoration: none;
+	color: black;
+}
+
+ .element {
+ 	padding: 8% 0;
+ }
+.element a {
+	color: #fcddd4;
+}
+
+.projects figure {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.projects figure img {
+	width: 100%;
+}
+
+
+.projects figcaption {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.projects figcaption {
+	font-size: 80%;
+}
+
+
+
+
+section#dutchbliss {
+	grid-area: case1;
+}
+
+section#imperium {
+	grid-area: case2;
+}
+
+section#robotica {
+	grid-area: case3;
+}
+
+
+ /* EINDE DRIE SECTIONS */ 
+
+#button {
+	width: 20%;
+    border: 1.4px solid #939393;
+    float: right;
+    margin: 0 5% 3% 0;
+    clear: both;
+}
+
+
+.cta-text p {
+    float: right;
+    margin-right: 5%;
+    letter-spacing: .5px;
+    font-size: 120%;
+}
+
+section.cta div.button-inner {
+    margin: 0 auto;
+    width: 100%;
+
+}
+
+
+
+.cta-text p span {
+	float: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
